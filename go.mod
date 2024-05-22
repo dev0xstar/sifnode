@@ -37,7 +37,7 @@ require (
 	google.golang.org/grpc v1.60.0
 	google.golang.org/protobuf v1.31.0
 	gopkg.in/yaml.v3 v3.0.1
-	pgregory.net/rapid v0.5.3
+	pgregory.net/rapid v1.1.0
 )
 
 require (
