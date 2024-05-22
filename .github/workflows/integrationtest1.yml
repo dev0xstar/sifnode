@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.8.10'
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 'v16.20.2'
       - name: Setup Go
