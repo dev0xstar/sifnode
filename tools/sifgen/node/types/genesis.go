@@ -18,5 +18,11 @@ type Genutil struct {
 	Gentxs Gentxs `json:"gentxs"`
 }
 
+type AppState struct {
+	Genutil Genutil `json:"genutil"`
+}
 
+type GenesisAppState struct {
+	AppState AppState `json:"app_state"`
+}
 
