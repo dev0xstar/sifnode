@@ -26,3 +26,10 @@ type GenesisAppState struct {
 	AppState AppState `json:"app_state"`
 }
 
+type Result struct {
+	Genesis *json.RawMessage `json:"genesis"`
+}
+
+type Genesis struct {
+	Result Result `json:"result"`
+}
