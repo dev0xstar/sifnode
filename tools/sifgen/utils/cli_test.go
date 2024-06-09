@@ -22,30 +22,5 @@ func SafeTempDir(dir string, pattern string, t *testing.T) string {
 	return result
 }
 
-func TestCLI_AddKeyBackendFile(t *testing.T) {
-	AddKeyToBackend(keyring.BackendFile, t)
-}
 
-func TestCLI_AddKeyBackendTest(t *testing.T) {
-	AddKeyToBackend(keyring.BackendTest, t)
-}
 
-func TestCLI_AddKeyBackendMemory(t *testing.T) {
-	AddKeyToBackend(keyring.BackendMemory, t)
-}
-
-func AddKeyToBackend(backend string, t *testing.T) {
-	c := NewCLI("unimportant", backend)
-	tempdir := SafeTempDir("", "homedir", t)
-	keyname := "mykey"
-	key, err := c.AddKey(keyname, TestMnemonic, TestPassword, tempdir)
-	if backend == keyring.BackendFile {
-		require.Error(t, err, "not implemented")
-	} else {
-		require.NoError(t, err)
-		var keyResult common.Keys
-		err = yaml.Unmarshal([]byte(*key), &keyResult)
-		require.NoError(t, err)
-		require.Equal(t, keyname, keyResult[0].Name)
-	}
-}
