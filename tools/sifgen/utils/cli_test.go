@@ -26,4 +26,7 @@ func TestCLI_AddKeyBackendFile(t *testing.T) {
 	AddKeyToBackend(keyring.BackendFile, t)
 }
 
+func TestCLI_AddKeyBackendTest(t *testing.T) {
+	AddKeyToBackend(keyring.BackendTest, t)
+}
 
