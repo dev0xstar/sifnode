@@ -22,5 +22,8 @@ func SafeTempDir(dir string, pattern string, t *testing.T) string {
 	return result
 }
 
+func TestCLI_AddKeyBackendFile(t *testing.T) {
+	AddKeyToBackend(keyring.BackendFile, t)
+}
 
 
