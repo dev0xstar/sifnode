@@ -30,3 +30,6 @@ func TestCLI_AddKeyBackendTest(t *testing.T) {
 	AddKeyToBackend(keyring.BackendTest, t)
 }
 
+func TestCLI_AddKeyBackendMemory(t *testing.T) {
+	AddKeyToBackend(keyring.BackendMemory, t)
+}
