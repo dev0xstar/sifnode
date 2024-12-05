@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 'v16.20.2'
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: '1.18.10'
       - name: Set up linux environment
