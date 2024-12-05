@@ -32,7 +32,7 @@ require (
 	github.com/vishalkuo/bimap v0.0.0-20180703190407-09cff2814645
 	github.com/yelinaung/go-haikunator v0.0.0-20150320004105-1249cae259af
 	go.uber.org/mock v0.3.0
-	go.uber.org/zap v1.23.0
+	go.uber.org/zap v1.27.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20231106174013-bbf56f31fb17
 	google.golang.org/grpc v1.60.0
 	google.golang.org/protobuf v1.31.0
@@ -160,8 +160,7 @@ require (
 	github.com/zondax/ledger-go v0.14.1 // indirect
 	go.etcd.io/bbolt v1.4.0-alpha.0.0.20240404170359-43604f3112c5 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	go.uber.org/atomic v1.10.0 // indirect
-	go.uber.org/multierr v1.9.0 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/net v0.23.0 // indirect
